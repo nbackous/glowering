@@ -17,7 +17,7 @@
           <img id="sky" src="https://cdn.glitch.com/3a38bbc8-78fc-4cff-b5c5-502d0c2f6b09%2Fpurpskyy.jpg?1536866561052">
           <audio id="mountainmaker" src="https://cdn.glitch.com/3a38bbc8-78fc-4cff-b5c5-502d0c2f6b09%2FMountain%20Maker.mp3?1536954928464"></audio>
   </a-assets>
-        <a-camera></a-camera>
+       <a-entity position="0 1.6 0" camera look-controls></a-entity>
   
 
 
@@ -37,38 +37,38 @@
       
       <a-box depth="1" height="4" width="1" position="-1 0.5 -3" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2800" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
       
       <a-box depth="1" height="4" width="1" position="3 0.5 -3" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2400" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
       
       <a-box depth="1" height="4" width="1" position="-3 0.5 -3" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2300" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
      
       <!--second row-->
       <a-box depth="1" height="6" width="1" position="1 0.5 -6" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2700" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
       
       <a-box depth="1" height="6" width="1" position="-1 0.5 -6" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2200" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
       
       <a-box depth="1" height="6" width="1" position="3 0.5 -6" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2100" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
       
       <a-box depth="1" height="6" width="1" position="-3 0.5 -6" rotation="0 45 0" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+      <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2800" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-box>
      
       <!--sphere1-->
@@ -80,7 +80,7 @@
                repeat="indefinite"></a-animation>
       <a-sphere radius="1" position="0 1 -8" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2200" from=".95" to=".85" repeat="indefinite"></a-animation>
         </a-sphere>
       </a-entity>
       
@@ -93,14 +93,14 @@
                repeat="indefinite"></a-animation>
       <a-sphere radius="1" position="0 3 -8" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
       <a-animation attribute="rotation" easing="linear"  dur="220000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2650" from=".95" to=".85" repeat="indefinite"></a-animation>
          </a-sphere>
       </a-entity>
      
       <!--torus-->
       <a-torus position="0 2 -9" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow arc="360" radius="2.5" radius-tubular="0.15">
       <a-animation attribute="rotation" easing="linear"  dur="15000" to="0 -360 0" repeat="indefinite"></a-animation>
-      
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2230" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-torus>
       
       <!--bottom plane-->
@@ -112,11 +112,12 @@
                from="0 0 0"
                to="0 -1.6 0"
                repeat="indefinite"></a-animation>
-        
+         <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2150" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-plane>
       
        <!--top plane-->
       <a-plane position="0 6 0" rotation="90 0 0" width="24" height="24" material="color: #C0C0C0; metalness:.95; roughness: 0.1; sphericalEnvMap: #sky" shadow>
+       <a-animation attribute="metalness" easing="linear" direction="alternate" dur="2620" from=".95" to=".85" repeat="indefinite"></a-animation>
       </a-plane>
     </a-scene>
      <!-- include the Glitch button to show what the webpage is about and
